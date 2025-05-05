@@ -71,7 +71,7 @@ CREATE TABLE voters (
 
 * Insert some test voter records.
 
-### 📦 5. Install Node and Python Dependencies
+###  5. Install Node and Python Dependencies
 
 * **Install Truffle globally**:
 
@@ -93,15 +93,15 @@ pip install fastapi mysql-connector-python pydantic python-dotenv uvicorn uvicor
 
 ---
 
-## 🧪 Running the Project
+##  Running the Project
 
-> ⚠️ **Make sure to update your MySQL credentials in** `./Database_API/.env`.
+>  **Make sure to update your MySQL credentials in** `./Database_API/.env`.
 
-### ▶️ 1. Start Ganache
+###  1. Start Ganache
 
 * Launch **Ganache** and open the `development` workspace.
 
-### 🔨 2. Compile Smart Contracts
+### 2. Compile Smart Contracts
 
 ```bash
 truffle console
@@ -109,26 +109,26 @@ compile
 .exit
 ```
 
-### 📦 3. Bundle Frontend Files Using Browserify
+### 3. Bundle Frontend Files Using Browserify
 
 ```bash
 browserify ./src/js/app.js -o ./src/dist/app.bundle.js
 ```
 
-### 🌐 4. Start the Node Server
+### 4. Start the Node Server
 
 ```bash
 node index.js
 ```
 
-### 🛡 5. Start the Database API with FastAPI
+### 5. Start the Database API with FastAPI
 
 ```bash
 cd Database_API
 uvicorn main:app --reload --host 127.0.0.1
 ```
 
-### 📤 6. Deploy Smart Contracts
+### 6. Deploy Smart Contracts
 
 ```bash
 truffle migrate
